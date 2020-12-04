@@ -1,0 +1,247 @@
+
+html, body, section {
+    height: 100%;
+}
+/* codigo prop  */
+body {
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.xop-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.xop-container article{
+    
+    align-items: flex-start;
+}
+
+/* con codigo propio - correccion*/
+.xop-container div, #formContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    align-items: center;
+}
+
+/* codigo priopop */
+#formContacto div{
+    display: flex;
+    flex-direction: row;
+}
+
+.xop-left {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10)),
+        url(../images/city.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.xop-right {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
+        url(../images/country.jpg);
+        background-size: cover;
+        background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.xop-container article{
+    margin-bottom: 50px;
+}
+
+/* codigo propio */
+.xop-left:hover, .xop-right:hover {
+    transform: scale(0.95);
+    /* 30 144 255 */
+    /* box-shadow: 0px 0px 80px dodgerblue; */
+    /* box-shadow: 0px 0px 80px rgba(3, 4, 55); shadow*/
+    box-shadow: 3px 4px 37px #06b800;
+}
+
+.xop-left h1 { 
+    font-family:'open sans', 'sans-serif', cursive;
+    font-size: 26px;
+}
+
+.xop-right h2 {
+    font-family: 'open sans', 'sans-serif', cursive;
+    font-size: 26px;
+    /* margin-bottom: 100px; */
+}
+
+
+
+/* CODIGO PROPIO */
+
+
+#formContacto label, input, textarea{
+    margin: 10px;
+    font-family:'open sans', 'sans-serif', cursive;
+}
+#formContacto label{
+    font-weight: 600;
+}
+
+input, textarea, label{
+    width: 350px;
+    text-align: left;
+    font-size: 19px;
+}
+
+input, textarea{
+    width: 200px;
+    text-align: left;
+    margin-left: -110px;
+    background-color: #343a40;
+    color: white;
+}
+
+/* FIN CODIGO PROPIO */
+
+
+
+#ubicacion iframe{
+    margin-top: 10px;
+    width: 190px;
+    height: 180px;
+    border-radius: 900px;
+    /* box-shadow: 0px 0px 40px green; */
+
+    transition: all 0.3s linear;
+}
+
+#ubicacion iframe:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 40px 10px #06b800;
+   
+    
+}
+
+/* oculta el boton para usar el label */
+input[type="file"]{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/* label para el boton de input file */
+.inputfile + label{
+
+    padding: 1.5%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 140px;
+    background-color: #343a40;
+    transition: all 0.8s;
+}
+
+div#contactButton{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+#btnFormContacto{
+    margin-left: 15px;
+}
+
+.btn-contacto{
+    transition: all 0.8s;
+
+    border: 1px solid white;
+    color: white !important;
+    text-align: center;
+    user-select: none;
+    padding: .375rem .25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+
+    
+    
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover, .btn-contacto:hover {                     
+    transition: all 0.8s;
+    box-shadow: 0px 0px 10px 10px #06b800; 
+
+
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+
+input:focus, textarea:focus{
+    transition: all 0.8s;
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0px 0px 10px 10px #06b800 ;
+    /* opacity: 0.4; */
+}
+/* FIN FORM */
+
+
+@media (max-width: 475px) {
+    h1, h2{
+        font-size: 7vw !important;
+    }
+    
+    form div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    label{
+        text-align: center;
+        font-size: 4vw !important;
+    }
+
+    input, textArea{
+        margin: 0px auto;
+    }
+
+    #btnFormContacto{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+  }

@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+/*----------------------------------------
+SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
+------------------------------------------*/
+
+
+.bg-primary {
+  background-color: #ff401c !important;
+}
+
+.text-primary {
+  color: #ff401c !important;
+}
+
+.btn-primary {
+  background-color: #ff401c !important;
+  border-color: #b51d00 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e82500 !important;
+}
+
+.btn-primary:active {
+  background-color: #b51d00 !important;
+  border-color: #821500 !important;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important;
+}
+
+/*--------------------------
+ESTILOS DEL DISEÑO
+---------------------------*/
+
+
+body {
+  font-size: 16px;
+  color: #44484a;
+  font-family: 'Open Sans', sans-serif;
+
+  /* --- */
+  background-image: url(../images/uni-0.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+  box-shadow: 0 0 10px #0c0c0c3b;
+}
+
+/*------------------------
+SHOW DE LOS MEDIAS QUERIES
+------------------------*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
+
+/* **************************CODIGO ******************************* */
+
+
+
+nav#menu{
+  /* opacity: 0.9 !important; */
+  color: #fff;
+  text-align: center;
+  background-color: rgb(52,58,64, 0.8);
+  
+}
+
+footer{
+  opacity: 0.8;
+  position: relative;
+            left: 0; 
+            bottom: 0; 
+            width: 100%;
+            /* 1956 */
+}
+
+
+
+
+.opact-1{
+  opacity: 1 !important;
+}
+.opact-6{
+  opacity: 0.6 !important;
+}
+.opact-7{
+  opacity: 0.7 !important;
+}
+
+.opact-8{
+  opacity: 0.8 !important;
+}
+.opact-9{
+  opacity: 0.9 !important;
+}
+
+.clearFix {
+  float: none;
+  clear: both;
+
+}
+
+/* Quien Soy */
+/* .quien-soy {} */
+
+/* Posicion de Caja de Quien soy */
+.margTop {
+  margin-top: 150px;
+}
+
+/* Fin Quienes Soy */
+
+/* CARRUSEL*/
+
+.content-all {
+
+  width: 220px;
+  margin: 450px auto 20px auto;
+  perspective: 1000px;
+  position: relative;
+  margin-top: 75px;
+}
+
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  animation: rotar 25s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+  /* animation-play-state: paused; */
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #06b800;
+  
+
+}
+
+
+.content-carrousel figure {
+  width: 100%;
+  height: 128px;
+  overflow: hidden;
+  position: absolute;
+
+  box-shadow: 0px 0px 20px 8px rgba(128, 128, 128, 0.205);
+  transition: all 300ms;
+  
+}
+
+.content-carrousel figure:hover {
+  box-shadow: 0px 0px 0px #06b800;
+  ;
+  transition: all 1000ms;
+  
+}
+
+.content-carrousel img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+
+  }
+}
+
+
+/* FIN CARRUSEL*/
+
+/* codigo */
+
+
+/* posicion de titulo de la seccion de quien soy */
+#tituloPrincipal {
+  margin-top: -25px;
+}
+
+
+/* Fin codigo */
+
+/* posicion de imagen de la seccion de quien soy */
+#dev-img-index {
+  margin-top: -100px;
+}
+
+.img-proj-min{
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+/* FIN - CARRUSEL*/
+
+/* Proyectos   */
+
+/* ancho para cada proyecto y opacidad 0 para que js lo cambie a 1 cuando se muestre la animacion */
+.boxProyect {
+  /*  -- fix later */
+/* 767 todo pegado */
+  /* width: 30%; */
+  /* margin: auto; */
+
+  width: 130px;
+  margin: 10px auto;
+
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.boxProyect img {
+  transition: all 0.3s linear;
+}
+
+.boxProyect img:hover {
+  box-shadow: 0px 0px 10px #06b800;
+  transform: scale(1.1);
+  
+  
+}
+
+/*Fin proyectos */
+
+/* Social Icons */
+
+#socialIconGroup, .socialIconGroup{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+
+
+}
+
+#socialIconGroup a{
+  text-decoration: none;
+
+}
+
+#socialIconGroup a:visited, a:active, a:hover, a:link{
+  text-decoration:none;
+  color: white;
+}
+
+#socialIconGroup  i{
+  font-size: 50px;
+  margin: 20px;
+  transition: all 0.3s linear;
+  
+}
+
+#socialIconGroup i:hover{
+  transform: scale(1.3);
+  color: rgba(255,255,255, 1);
+  border-radius: 400px;
+  box-shadow: 0px 0px 10px 10px #06b800;
+}
+
+/* refactor to only class */
+.socialIconGroup a{
+  text-decoration: none;
+
+}
+
+.socialIconGroup a:visited, a:active, a:hover, a:link{
+  text-decoration:none;
+  color: white;
+}
+
+.socialIconGroup  i{
+  font-size: 50px;
+  margin: 20px;
+  transition: all 0.3s linear;
+  
+}
+
+.socialIconGroup i:hover{
+  transform: scale(1.3);
+  color: rgba(255,255,255, 1);
+  border-radius: 400px;
+  box-shadow: 0px 0px 10px 10px #06b800;
+}
+/* End Social Icons */
+
+
+/* Menu */
+#menu {
+  transition: all 0.39s linear !important;
+  box-shadow: 0px 0px 20px #06b800;
+  border-radius: 8px;
+  width: 99.7%;
+  margin: 2px auto;
+
+}
+
+#menu:hover {
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  transition: 3000ms;
+
+  box-shadow:  3px 4px 37px #06b800;
+
+}
+
+/* Fin menu */
+
+
+/* estilos color */
+
+.title-color-w{
+  color: white;
+}
+
+.bg-main {
+  /* background-color: dodgerblue; */
+  background-color: rgb(78, 78, 78, 0.5);
+  box-shadow: inset 3px 4px 37px #bebebe;
+}
+
+/* botones */
+.btn-main {
+  background-color: #44484a;
+  border-color: darken(#44484a, 20%) !important;
+}
+
+.btn-main:active {
+  background-color: darken(#44484a, 20%) !important;
+  border-color: darken(#44484a, 30%) !important;
+}
+
+.btn-main:focus {
+  box-shadow: 0 0 0 0.2rem rgba(#44484a, .5) !important;
+}
+
+.btn-main{
+  color: white !important;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  border-radius: .25rem;
+  transition: color .35s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+
+
+.btn-main:hover{
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 4px #06b800;
+  
+}
+
+
+/* Fin botones */
+
+.size-space{
+  box-sizing: content-box;
+  width: 134px;
+}
+
+
+@media (min-height: 1956px){
+
+  footer{
+    position: absolute;
+        
+  }
+  
+}
+/* carrusel index movil */
+@media (max-width: 765px){
+
+  html, body{
+    overflow-x: hidden;
+  }
+  
+  
+  .opact-1{
+    opacity: 1 !important;
+  }
+  .opact-4{
+    opacity: 0.5 !important;
+  }
+  .opact-6{
+    opacity: 1 !important;
+  }
+  .opact-7{
+    opacity: 1 !important;
+  }
+
+  .opact-8{
+    opacity: 0.8 !important;
+  }
+  .opact-9{
+    opacity: 1 !important;
+  }
+
+  nav#menu{
+    background-color: rgb(52,58,64, 1);
+    
+  }
+
+  
+}
+
+/* carrusel index movil */
