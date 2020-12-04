@@ -478,4 +478,39 @@ footer{
   
 }
 
-/* carrusel index movil */
+/* Projects index*/
+@media (max-width: 991px){
+
+
+
+  #main-project-container div.boxProyect{
+    /*  -- fix later */
+  /* 767 todo pegado */
+    width: 45%;
+    margin: auto;
+
+    /* width: 50vw;*/
+    margin: 10px auto; 
+
+  }
+
+}
+/* Projects index*/
+@media (max-width: 395px){
+
+  .img-proj-min img{
+    object-fit: cover;
+  }
+
+  #main-project-container div.boxProyect{
+    /*  -- fix later */
+  /* 767 todo pegado */
+    width: 80%;
+    margin: auto;
+
+    /* width: 50vw;*/
+    margin: 10px auto; 
+
+  }
+
+}
